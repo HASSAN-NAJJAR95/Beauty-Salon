@@ -1,0 +1,382 @@
+/*GLOBAL*/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1.6;
+  font-family: 'Kalam', cursive;
+}
+
+a {
+  text-decoration: none;
+  color: #111111;
+}
+
+/*NAVBAR & HERO*/
+header {
+  height: 1000px;
+}
+
+header .hero {
+  height: 500px;
+  position: relative;
+}
+
+header .hero img {
+  width: 100%;
+  height: 100%;
+}
+
+header .hero .content {
+  position: absolute;
+  top: 15%;
+  left: 4%;
+  width: 400px;
+}
+
+header .hero .content h1 {
+  font-size: 3.5rem;
+}
+
+header .hero .content p {
+  width: 100%;
+  margin-bottom: 40px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header .hero .content .btn {
+  border-radius: 8px;
+  width: 150px;
+  font-weight: 400;
+  padding: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+header .hero .content .btn a {
+  font-size: 19px;
+}
+
+@media (max-width: 793px) {
+  header .hero .content {
+    width: 275px;
+  }
+  header .hero .content p {
+    font-size: 1.5rem;
+    width: 100%;
+    margin-bottom: 14px;
+  }
+}
+
+@media (max-width: 527px) {
+  header .hero .content {
+    width: 188px;
+  }
+  header .hero .content p {
+    font-size: 1.0rem;
+    width: 100%;
+    margin-bottom: 2px;
+  }
+}
+
+header .position-absolute {
+  top: 92%;
+}
+
+/*ABOUT SALON*/
+.about-salon img {
+  width: 500px;
+  height: 600px;
+}
+
+.about-salon p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.beauty-video .video-overlay {
+  position: absolute;
+  width: 100%;
+  height: 515px;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.beauty-video .video-overlay .video-control-play, .beauty-video .video-overlay .video-control-pause {
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .beauty-video .video-overlay .video-control-play, .beauty-video .video-overlay .video-control-pause {
+    margin-top: 30%;
+  }
+}
+
+@media (max-width: 525px) {
+  .beauty-video .video-overlay .video-control-play, .beauty-video .video-overlay .video-control-pause {
+    margin-top: 60%;
+    font-size: 2rem !important;
+  }
+}
+
+@media (max-width: 365px) {
+  .beauty-video .video-overlay .video-control-play, .beauty-video .video-overlay .video-control-pause {
+    margin-top: 90%;
+    font-size: 1rem;
+  }
+}
+
+.beauty-video .video-overlay .video-control-pause {
+  display: none;
+}
+
+.beauty-video .video-container {
+  overflow: hidden;
+  width: 100%;
+  height: 515px;
+  position: relative;
+}
+
+.beauty-video .video-container video {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .beauty-video .video-overlay {
+    position: absolute;
+    width: 100%;
+    height: 315px;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .beauty-video .video-overlay .video-control-play, .beauty-video .video-overlay .video-control-pause {
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 800px) and (max-width: 700px) {
+  .beauty-video .video-overlay .video-control-play, .beauty-video .video-overlay .video-control-pause {
+    margin-bottom: 18%;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 800px) and (max-width: 525px) {
+  .beauty-video .video-overlay .video-control-play, .beauty-video .video-overlay .video-control-pause {
+    margin-bottom: 48%;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 800px) and (max-width: 365px) {
+  .beauty-video .video-overlay .video-control-play, .beauty-video .video-overlay .video-control-pause {
+    margin-bottom: 85%;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .beauty-video .video-overlay .video-control-pause {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) and (max-width: 700px) {
+  .beauty-video .video-overlay .video-control-pause {
+    margin-bottom: 18%;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 800px) and (max-width: 525px) {
+  .beauty-video .video-overlay .video-control-pause {
+    margin-bottom: 48%;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 800px) and (max-width: 365px) {
+  .beauty-video .video-overlay .video-control-pause {
+    margin-bottom: 85%;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .beauty-video .video-container {
+    overflow: hidden;
+    width: 100%;
+    height: 315px;
+    position: relative;
+  }
+  .beauty-video .video-container video {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .beauty-video .video-overlay {
+    position: absolute;
+    width: 100%;
+    height: 215px;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .beauty-video .video-overlay .video-control-play, .beauty-video .video-overlay .video-control-pause {
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 600px) and (max-width: 700px) {
+  .beauty-video .video-overlay .video-control-play, .beauty-video .video-overlay .video-control-pause {
+    margin-bottom: 18%;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) and (max-width: 525px) {
+  .beauty-video .video-overlay .video-control-play, .beauty-video .video-overlay .video-control-pause {
+    margin-bottom: 48%;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) and (max-width: 365px) {
+  .beauty-video .video-overlay .video-control-play, .beauty-video .video-overlay .video-control-pause {
+    margin-bottom: 85%;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .beauty-video .video-overlay .video-control-pause {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) and (max-width: 700px) {
+  .beauty-video .video-overlay .video-control-pause {
+    margin-bottom: 18%;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) and (max-width: 525px) {
+  .beauty-video .video-overlay .video-control-pause {
+    margin-bottom: 48%;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) and (max-width: 365px) {
+  .beauty-video .video-overlay .video-control-pause {
+    margin-bottom: 85%;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .beauty-video .video-container {
+    overflow: hidden;
+    width: 100%;
+    height: 215px;
+    position: relative;
+  }
+  .beauty-video .video-container video {
+    width: 100%;
+  }
+}
+
+/*Products*/
+.products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  width: 100%;
+  background-color: #dad6d7;
+}
+
+.products p {
+  text-align: start;
+  margin-top: 25px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.products img {
+  width: 75%;
+  height: 541px;
+}
+
+.products .title {
+  width: 50%;
+  text-align: start;
+  padding-top: 10%;
+}
+
+.products .title a {
+  width: 160px;
+  background-color: #fff;
+  padding: 8px;
+  margin: 20px 0;
+  border-radius: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+.products .title a:hover {
+  background-color: #fbd2c0;
+  color: #111111;
+}
+
+.beauty-services img {
+  height: 300px;
+}
+
+/*CONTACT*/
+.contact #contacts input {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*Footer*/
+footer {
+  background-color: #454545;
+  padding: 5px 0px;
+  color: #fff;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

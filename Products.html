@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
+        <!--Css-->
+        <link rel="stylesheet" href="css/style.css">
+        <title>BEAUTY SALON</title>
+    </head>
+<body>
+<!--NAVBAR & HERO-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html"><h3>Beauty Salon</h3></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse text-center" id="navbarNav">
+      <ul class="navbar-nav ms-auto ">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="about-salon.html">About Salon</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="products.html">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sign.html">Sign In</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contacts</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--products-->
+<div class="products mt-5">
+    <img src="./images/prod (2).png" alt="products">
+    <div class="title">
+        <h2>What products do you have?</h2>
+        <p class="">
+            Every single ingredient you put on your skin is information, every ingredient contains messages that communicate to every single cell in your skin.
+        </p>
+        <a href="products.html#products">Buy Now</a>
+    </div>
+</div>
+<!--Service Beauty Studio-->
+<h2 class="my-3 text-center">Full Service Beauty Studio</h2>
+<div class="row row-cols-1 row-cols-md-2 g-4 beauty-services container-fluid">
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="card">
+        <img src="./images/service1.jpeg" alt="body care">
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="card">
+        <img src="./images/service2.jpg" alt="body care">
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="card">
+        <img src="./images/service3.jpg" alt="body care">
+    </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card">
+            <img src="./images/service4.jpg" alt="body care">
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card">
+            <img src="./images/service5.jpeg" alt="body care">
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card">
+            <img src="./images/service6.jpg" alt="body care">
+        </div>
+      </div>
+  </div>
+
+<!--Products-->
+<h2 class="text-center my-2">Our Products</h2>
+<div id="products" class="row row-cols-1 row-cols-md-4 g-4 container-fluid  text-center my-2">
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <div class="card">
+        <img src="./images/products/1.jpg" alt="makeup">
+        <div class="card-body ">
+          <h5 class="card-title">GHD Styling </h5>
+          <p class="title-text">115.00$</p>
+            <button class="btn btn-outline-danger w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Buy Now</button>
+            <!--MODAL-->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Buy Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+              <form action="" method="post">
+                      <!--First Name-->
+                          <div class="input-group mb-3">
+                                  <span class="input-group-text">First Name</span>
+                                  <input type="text" name="firstName" class="form-control" >
+                            </div>
+                            <!--Last Name-->
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Last Name</span>
+                                <input type="text" name="lastName" class="form-control" >
+                            </div>
+                            <!--Email-->
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Email</span>
+                                <input type="text" class="form-control" id="email" name="email"   >
+                            </div>
+                            <!--Product Name-->
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Product Name</span>
+                                <input type="text" class="form-control" id="productName" name="productName"  >
+                            </div>
+                            <!--credit card-->
+                            <div class="input-group mb-3">
+                                  <span class="input-group-text">Card Name</span>
+                                  <input type="text"  name="cardName" class="form-control w-25" name="cardName">                                                
+                            </div>
+                            <div class="input-group mb-3">
+                            <span class="input-group-text">Card Number</span>
+                                <input type="text" name="cardNumber" class="form-control w-25">
+                                <div class="my-3"></div>
+                            </div>
+                              <div class="input-group">
+                                <span class="input-group-text">Code Number On Card</span>
+                                <input type="text" name="codeNumber" class="form-control">
+                              </div>
+                              <input  type="submit" class="btn btn-outline-danger mt-3" value="Confirm Order" name="submit5">
+              </form>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <div class="card">
+        <img src="./images/products/2.jpg" alt="LOreal Steampod ">
+        <div class="card-body ">
+          <h5 class="card-title">LOreal Steampod </h5>
+          <p class="title-text">250.00$</p>
+            <button class="btn btn-outline-danger w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight2" aria-controls="offcanvasRight">Buy Now</button>
+            <!--MODAL-->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight2" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Buy Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+              <form action="" method="post">
+                      <!--First Name-->
+                          <div class="input-group mb-3">
+                                  <span class="input-group-text">First Name</span>
+                                  <input type="text" name="firstName" class="form-control" >
+                            </div>
+                            <!--Last Name-->
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Last Name</span>
+                                <input type="text" name="lastName" class="form-control" >
+                            </div>
+                            <!--Email-->
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Email</span>
+                                <input type="text" class="form-control" id="email" name="email"   >
+                            </div>
+                            <!--Product Name-->
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Product Name</span>
+                                <input type="text" class="form-control" id="productName" name="productName"  >
+                            </div>
+                            <!--credit card-->
+                            <div class="input-group mb-3">
+                                  <span class="input-group-text">Card Name</span>
+                                  <input type="text"  name="cardName" class="form-control w-25" name="cardName">                                                
+                            </div>
+                            <div class="input-group mb-3">
+                            <span class="input-group-text">Card Number</span>
+                                <input type="text" name="cardNumber" class="form-control w-25">
+                                <div class="my-3"></div>
+                            </div>
+                              <div class="input-group">
+                                <span class="input-group-text">Code Number On Card</span>
+                                <input type="text" name="codeNumber" class="form-control">
+                              </div>
+                              <input  type="submit" class="btn btn-outline-danger mt-3" value="Confirm Order" name="submit5">
+              </form>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <div class="card">
+        <img src="./images/products/3.jpg" alt="Hair Colour Savings ">
+        <div class="card-body ">
+          <h5 class="card-title">Hair Colour Savings </h5>
+          <p class="title-text">90.00$</p>
+            <button class="btn btn-outline-danger w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight3" aria-controls="offcanvasRight">Buy Now</button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight3" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Buy Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+              <form action="" method="post">
+                      <!--First Name-->
+                          <div class="input-group mb-3">
+                                  <span class="input-group-text">First Name</span>
+                                  <input type="text" name="firstName" class="form-control" >
+                            </div>
+                            <!--Last Name-->
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Last Name</span>
+                                <input type="text" name="lastName" class="form-control" >
+                            </div>
+                            <!--Email-->
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Email</span>
+                                <input type="text" class="form-control" id="email" name="email"   >
+                            </div>
+                            <!--Product Name-->
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Product Name</span>
+                                <input type="text" class="form-control" id="productName" name="productName"  >
+                            </div>
+                            <!--credit card-->
+                            <div class="input-group mb-3">
+                                  <span class="input-group-text">Card Name</span>
+                                  <input type="text"  name="cardName" class="form-control w-25" name="cardName">                                                
+                            </div>
+                            <div class="input-group mb-3">
+                            <span class="input-group-text">Card Number</span>
+                                <input type="text" name="cardNumber" class="form-control w-25">
+                                <div class="my-3"></div>
+                            </div>
+                              <div class="input-group">
+                                <span class="input-group-text">Code Number On Card</span>
+                                <input type="text" name="codeNumber" class="form-control">
+                              </div>
+                              <input  type="submit" class="btn btn-outline-danger mt-3" value="Confirm Order" name="submit5">
+              </form>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <div class="card">
+        <img src="./images/products/4.jpg" alt="Salon Stocking fillers ">
+        <div class="card-body ">
+          <h5 class="card-title">Salon Stocking fillers </h5>
+          <p class="title-text">80.00$</p>
+            <button class="btn btn-outline-danger w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight4" aria-controls="offcanvasRight">Buy Now</button>
+            <!--MODAL-->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight4" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Buy Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+              <form action="" method="post">
+                      <!--First Name-->
+                          <div class="input-group mb-3">
+                                  <span class="input-group-text">First Name</span>
+                                  <input type="text" name="firstName" class="form-control" >
+                            </div>
+                            <!--Last Name-->
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Last Name</span>
+                                <input type="text" name="lastName" class="form-control" >
+                            </div>
+                            <!--Email-->
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Email</span>
+                                <input type="text" class="form-control" id="email" name="email"   >
+                            </div>
+                            <!--Product Name-->
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Product Name</span>
+                                <input type="text" class="form-control" id="productName" name="productName"  >
+                            </div>
+                            <!--credit card-->
+                            <div class="input-group mb-3">
+                                  <span class="input-group-text">Card Name</span>
+                                  <input type="text"  name="cardName" class="form-control w-25" name="cardName">                                                
+                            </div>
+                            <div class="input-group mb-3">
+                            <span class="input-group-text">Card Number</span>
+                                <input type="text" name="cardNumber" class="form-control w-25">
+                                <div class="my-3"></div>
+                            </div>
+                              <div class="input-group">
+                                <span class="input-group-text">Code Number On Card</span>
+                                <input type="text" name="codeNumber" class="form-control">
+                              </div>
+                              <input  type="submit" class="btn btn-outline-danger mt-3" value="Confirm Order" name="submit5">
+              </form>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ <!--FOOTER-->
+ <footer>
+    <h5>All Copy Right Are Reserved &COPY;</h5>
+</footer>
+
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/script.js"></script>
+</body>
+</html>

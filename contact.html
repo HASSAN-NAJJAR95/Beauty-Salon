@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
+        <!--Css-->
+        <link rel="stylesheet" href="css/style.css">
+        <title>Beauty Salon</title>
+    </head>
+<body>
+    <!--NAVBAR & HERO-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"><h3>Beauty Salon</h3></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarNav">
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="about-salon.html">About Salon</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sign.html">Sign In</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="contacts" class="row row-cols-1 row-cols-md-2 g-4 my-4 container-fluid mx-auto">
+        <div class="col-lg-6 col-md-6 col-sm-12 d-flex">
+          <div class="card my-auto">
+            <img class="shadow-lg p-2 bg-white rounded " src="./images/contact.jpg" alt="Contact">
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="card">
+            <div class="card-body">
+              <form action="contact.php" method="POST">
+                <h2 class="text-center my-4">Your Opinion Matters</h2>
+                <div class="input-group mb-3">
+                    <!--First Name-->
+                    <span class="input-group-text ms-2" id="inputGroup-sizing-default">First Name</span>
+                    <input type="text" class="form-control" name="firstName" id="firstName" >
+                    <!--Last Name-->
+                    <span class="input-group-text ms-2" id="inputGroup-sizing-default">Last Name</span>
+                    <input type="text" class="form-control" name="lastName" id="lastName" >
+                  </div>
+                  <div class="input-group mb-3">
+                    <!--Email-->
+                  <span class="input-group-text ms-2" id="inputGroup-sizing-default">Email</span>
+                  <input type="text" class="form-control" name="email" id="email"  >
+                  <!--Number Phone-->
+                  <span class="input-group-text ms-2" id="inputGroup-sizing-default">Phone</span>
+                  <input type="text" class="form-control" name="phoneNumber" id="phoneNumber" >
+                  </div>
+                  <!--Message-->
+                  <div class="mb-3 "></div>
+                        <span class="input-group-text ms-2 " id="inputGroup-sizing-default">Your Message</span>
+                        <textarea class="form-control ms-2" name="letter" id="letter" cols="30" rows="6" ></textarea>
+                  </div>
+                  <input class="btn btn-outline-danger w-50 mx-auto my-3" type="submit" name="submit2" id="submit2" value="Send">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    
+    <!--FOOTER-->
+    <footer>
+        <h5>All Copy Right Are Reserved &COPY;</h5>
+    </footer>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/Script.js"></script>
+</body>
+</html>

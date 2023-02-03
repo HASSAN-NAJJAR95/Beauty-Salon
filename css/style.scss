@@ -1,0 +1,299 @@
+$color_primary:  #fbd2c0;
+$color_secondary:  #111111;
+$color_sub: #fff;
+$color_links:  #454545;
+
+/*GLOBAL*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+     font-family: 'Kalam', cursive ;
+
+}
+a{
+    text-decoration:  none;
+    color: $color_secondary;
+}
+
+
+/*NAVBAR & HERO*/
+header{
+    
+    height: 1000px;
+    .hero{
+        height:500px;
+        position: relative;
+     img{
+        width: 100%;
+        height: 100%;
+     }
+     .content{
+        position: absolute;
+        top: 15%;
+        left: 4%;
+        width: 400px;
+        h1{
+            font-size: 3.5rem;
+        }
+        p{
+            width: 100%;
+            margin-bottom: 40px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .btn{
+            border-radius: 8px;
+            width: 150px;
+            font-weight: 400;
+            padding: 10px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+            a{
+                font-size: 19px;
+            }
+        }
+        @media (max-width: 793px){
+            width: 275px;
+            p{
+                font-size: 1.5rem;
+                width: 100%;
+                margin-bottom: 14px;
+            }
+        }
+        @media (max-width: 527px){
+            width: 188px;
+            p{
+                font-size: 1.0rem;
+                width: 100%;
+                margin-bottom: 2px;
+            }
+        }
+     }
+    }
+  
+    .position-absolute{
+        top: 92%;
+    }
+}
+
+/*ABOUT SALON*/
+.about-salon{
+    img{
+        width: 500px;
+        height: 600px;
+    }
+    p{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+}
+.beauty-video{
+    .video-overlay{
+        position: absolute;
+        width: 100%;
+        height: 515px;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .video-control-play, .video-control-pause{
+            color: white;
+            font-size: 3rem;
+            cursor: pointer;
+            @media (max-width:700px){
+                margin-top: 30%;
+
+            }        
+            @media (max-width:525px){
+                margin-top: 60% ;
+                font-size: 2rem !important;
+            }   
+            @media (max-width:365px){
+                margin-top: 90%;
+                font-size: 1rem;
+            }   
+        }
+        .video-control-pause{
+            display: none;
+           
+        }
+    }
+    .video-container{
+        overflow: hidden;
+        width: 100%;
+        height: 515px;
+        position: relative;
+        video{
+            width: 100%;
+        }
+    }
+    @media (max-width:800px){
+        .video-overlay{
+            position: absolute;
+            width: 100%;
+            height: 315px;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .video-control-play, .video-control-pause{
+                color: white;
+                font-size: 3rem;
+                cursor: pointer;
+                @media (max-width:700px){
+                    margin-bottom: 18%;
+                    font-size: 2rem;
+    
+                }        
+                @media (max-width:525px){
+                    margin-bottom: 48%;
+                    font-size: 1rem;
+                }   
+                @media (max-width:365px){
+                    margin-bottom: 85%;
+                    font-size: 1rem;
+                }   
+            }
+            .video-control-pause{
+                display: none;
+                @media (max-width:700px){
+                    margin-bottom: 18%;
+                    font-size: 2rem;
+    
+                }        
+                @media (max-width:525px){
+                    margin-bottom: 48%;
+                    font-size: 1rem;
+                }   
+                @media (max-width:365px){
+                    margin-bottom: 85%;
+                    font-size: 1rem;
+                }  
+            }
+        }
+        .video-container{
+            overflow: hidden;
+            width: 100%;
+            height: 315px;
+            position: relative;
+            video{
+                width: 100%;
+            }
+        }   
+    }
+    @media (max-width:600px){
+        .video-overlay{
+            position: absolute;
+            width: 100%;
+            height: 215px;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .video-control-play, .video-control-pause{
+                color: white;
+                font-size: 3rem;
+                cursor: pointer;
+                @media (max-width:700px){
+                    margin-bottom: 18%;
+                    font-size: 2rem;
+    
+                }        
+                @media (max-width:525px){
+                    margin-bottom: 48%;
+                    font-size: 1rem;
+                }   
+                @media (max-width:365px){
+                    margin-bottom: 85%;
+                    font-size: 1rem;
+                }   
+            }
+            .video-control-pause{
+                display: none;
+                @media (max-width:700px){
+                    margin-bottom: 18%;
+                    font-size: 2rem;
+    
+                }        
+                @media (max-width:525px){
+                    margin-bottom: 48%;
+                    font-size: 1rem;
+                }   
+                @media (max-width:365px){
+                    margin-bottom: 85%;
+                    font-size: 1rem;
+                }  
+            }
+        }
+        .video-container{
+            overflow: hidden;
+            width: 100%;
+            height: 215px;
+            position: relative;
+            video{
+                width: 100%;
+            }
+        }   
+    }
+}
+
+/*Products*/
+.products{
+    display: flex;
+    justify-items: center;
+    width: 100%;
+    background-color: #dad6d7;
+    
+    p{
+        text-align: start;
+        margin-top: 25px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    }
+    img{
+        width: 75%;
+        height: 541px;
+    }
+    .title{
+        width: 50%;
+        text-align: start;
+        padding-top: 10%;
+       
+        a{
+            width: 160px;
+            background-color: $color_sub;
+            padding: 8px;
+            margin:  20px 0;
+            border-radius: 10px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            cursor: pointer;
+            transition: all .5s ease-in;
+            &:hover{
+                background-color: $color_primary;
+                color: $color_secondary;
+            }
+        }
+    }
+}
+.beauty-services{
+    img{
+        height: 300px;
+    }
+}
+
+/*CONTACT*/
+.contact{
+   #contacts{
+    input{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+   }
+}
+
+/*Footer*/
+footer{
+    background-color: $color_links;
+    padding:  5px 0px;
+    color: $color_sub;
+    text-align: center;
+}
